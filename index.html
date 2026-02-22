@@ -23,6 +23,7 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* LEFT SIDE */
 .left{
     background:#1e293b;
     color:white;
@@ -55,6 +56,7 @@ body{
 
 .left .contact p{
     margin:10px 0;
+    font-size:14px;
 }
 
 .left i{
@@ -62,6 +64,7 @@ body{
     color:#38bdf8;
 }
 
+/* RIGHT SIDE */
 .right{
     padding:40px;
 }
@@ -81,6 +84,7 @@ body{
     font-size:15px;
 }
 
+/* FOOTER */
 .footer{
     background:#1e293b;
     color:white;
@@ -90,21 +94,40 @@ body{
     margin-top:30px;
 }
 
-.footer .social{
-    margin-top:10px;
-}
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
 
-.footer .social a{
-    color:white;
-    margin:0 10px;
-    font-size:18px;
-    transition:0.3s;
-}
+@media (max-width: 768px){
 
-.footer .social a:hover{
-    color:#38bdf8;
-}
+    .container{
+        grid-template-columns: 1fr;   /* jadi 1 kolom */
+        margin:20px;
+    }
 
+    .left{
+        text-align:center;
+        padding:20px;
+    }
+
+    .left .contact{
+        text-align:center;
+    }
+
+    .right{
+        padding:25px;
+    }
+
+    .left img{
+        width:130px;
+        height:130px;
+    }
+
+    .right h3{
+        font-size:18px;
+    }
+
+}
 </style>
 </head>
 
